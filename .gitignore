@@ -1,0 +1,37 @@
+# Database configuration files with credentials
+includes/config.php
+admin/includes/config.php
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*.swo
+
+# IDE and editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+
+# Node modules (if any)
+node_modules/
+
+# Composer files (if any)
+vendor/
+composer.lock
+
+# Database dumps
+*.sql.bak
+carrental.sql

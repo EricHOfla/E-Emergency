@@ -1,0 +1,153 @@
+:root {
+    --primary-color: #E12E2E;
+    --secondary-color: #1A2B48;
+    --accent-color: #F8F9FA;
+    --text-main: #2D3436;
+    --text-muted: #636E72;
+    --white: #FFFFFF;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    font-family: 'Outfit', sans-serif !important;
+    background-color: #f4f7f6;
+    color: var(--text-main);
+}
+
+/* Admin Brand Header */
+.brand {
+    background: var(--secondary-color) !important;
+    padding: 10px 0;
+    box-shadow: var(--shadow-md);
+}
+
+.brand a {
+    color: white !important;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Sidebar Styling */
+.ts-sidebar {
+    background: #232d3b !important;
+    box-shadow: var(--shadow-lg);
+}
+
+.ts-sidebar-menu li a {
+    padding: 15px 25px !important;
+    font-weight: 500;
+    border-left: 4px solid transparent;
+    transition: var(--transition);
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.ts-sidebar-menu li a:hover,
+.ts-sidebar-menu li.open>a {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: white !important;
+    border-left: 4px solid var(--primary-color);
+}
+
+.ts-sidebar-menu li i {
+    color: var(--primary-color) !important;
+    width: 20px;
+}
+
+/* Dashboard Cards */
+.panel {
+    border: none !important;
+    border-radius: 12px !important;
+    box-shadow: var(--shadow-sm) !important;
+    transition: var(--transition);
+}
+
+.panel:hover {
+    box-shadow: var(--shadow-md) !important;
+}
+
+.panel-heading {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.stat-panel {
+    padding: 30px !important;
+    border-radius: 12px !important;
+}
+
+/* Tables */
+.table {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background: var(--accent-color);
+    border: none !important;
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 15px !important;
+}
+
+.table tbody td {
+    padding: 15px !important;
+    vertical-align: middle !important;
+    border-top: 1px solid #f0f0f0 !important;
+}
+
+.table tr,
+.table td,
+.table th {
+    transition: none !important;
+    transform: none !important;
+}
+
+.table tr:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary-color) !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 20px !important;
+    font-weight: 600 !important;
+}
+
+.btn-info {
+    background: var(--secondary-color) !important;
+    border: none !important;
+}
+
+/* Page Titles */
+.page-title {
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
