@@ -1,7 +1,3 @@
-# Database configuration files with credentials
-includes/config.php
-admin/includes/config.php
-
 # Environment variables
 .env
 .env.local
